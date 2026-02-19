@@ -1,0 +1,5 @@
+# This a comment 
+
+# To ignore use *.extension which will ignore all files with the specified extension 
+
+*.txt
