@@ -70,6 +70,9 @@ _( from the [interview](https://evrone.com/blog/jeffrey-snover-interview) with J
 - **`Stop-Process`**: Stops a specific process.
 - **`Set-Location`**: Changes the current directory (like `cd` in Command Prompt).
 - **`New-Item`**: Creates a new file or directory.
+- **`Add-Content`**: Appends content, such as words or data, to a file. 
+
+ 
 - **`Get-Content`**: Gets the contents of a file. 
 
 ### Example Script
