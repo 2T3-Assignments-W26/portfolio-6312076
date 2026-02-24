@@ -1,0 +1,84 @@
+[33mcommit 5ef502c0272f82f7ee6137b4c928496cb9605286[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Coulombe <6312076@johnabbottcollege.net>
+Date:   Thu Feb 19 10:37:06 2026 -0500
+
+    removed everything in git.md
+
+[33mcommit 4e9a32d3e7246485ed677c458b187a50d096082e[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: f101b40 a9b8900
+Author: Coulombe <6312076@johnabbottcollege.net>
+Date:   Thu Feb 19 10:26:12 2026 -0500
+
+    Merge branch 'main' of https://github.com/2T3-Assignments-W26/portfolio-6312076
+
+[33mcommit f101b400664b95679bdd05f31c19e81ac3bb571b[m
+Author: Coulombe <6312076@johnabbottcollege.net>
+Date:   Thu Feb 19 10:21:46 2026 -0500
+
+    Add .gitignore file to exclude text files
+
+[33mcommit a9b890025edd247386d6b217249f4b1ca765f07f[m
+Author: 6312076 <6312076@johnabbottcollege.net>
+Date:   Tue Feb 17 11:22:47 2026 -0500
+
+    Update _sidebar.md
+
+[33mcommit 2ba2ba4615a9ece232d69c93378c2a6f76ad8ade[m
+Author: Coulombe <6312076@johnabbottcollege.net>
+Date:   Tue Feb 17 11:12:15 2026 -0500
+
+    commit the images moving
+
+[33mcommit 6366d617bc56fb425e7bae4f71a57e26c20f192b[m
+Author: Coulombe <6312076@johnabbottcollege.net>
+Date:   Tue Feb 17 11:09:02 2026 -0500
+
+    added embed images and links
+
+[33mcommit fa2a962c0261c3e08cceb34d33fddff2cd1819f4[m
+Author: Coulombe <6312076@johnabbottcollege.net>
+Date:   Tue Feb 17 10:59:48 2026 -0500
+
+    added list and bolding
+
+[33mcommit 16d0bba36911c531db05b8b384c703760b1ba886[m
+Author: Coulombe <6312076@johnabbottcollege.net>
+Date:   Tue Feb 17 10:55:16 2026 -0500
+
+    code blocks and code list now saved and added
+
+[33mcommit 7388230e431becb17e364a1e1a3d4a2822874809[m
+Author: Coulombe <6312076@johnabbottcollege.net>
+Date:   Tue Feb 17 10:54:28 2026 -0500
+
+    code blocks and code list added
+
+[33mcommit 9fdd031ac3d609e0396ef30fa092aa48504198e6[m
+Author: Coulombe <6312076@johnabbottcollege.net>
+Date:   Thu Feb 12 11:10:20 2026 -0500
+
+    lists added
+
+[33mcommit f135cee87ab01ac09ba9702da75ffd0207ba0e0c[m
+Author: Coulombe <6312076@johnabbottcollege.net>
+Date:   Thu Feb 12 11:06:51 2026 -0500
+
+    block quote added
+
+[33mcommit 00f29106786e8284b283dc5d7873601c30546e80[m
+Author: Coulombe <6312076@johnabbottcollege.net>
+Date:   Thu Feb 12 10:54:17 2026 -0500
+
+    add powershell.md
+
+[33mcommit ac2983fd08d0f7ac3dfd7e050f24729551bb8be9[m
+Author: Coulombe <6312076@johnabbottcollege.net>
+Date:   Thu Feb 12 10:52:22 2026 -0500
+
+    add git cheat sheets
+
+[33mcommit 26771ce9b093892bf0bd687ba1f6b169e90494a1[m
+Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+Date:   Tue Feb 10 14:44:37 2026 +0000
+
+    Initial commit
