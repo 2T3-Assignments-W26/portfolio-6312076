@@ -1,0 +1,17 @@
+﻿
+(function () {
+
+	if (window.$ && !$.browser) {
+
+		// Implémentation minimale pour continuer à faire fonctionner les Mio.
+		$.browser = {};
+
+		var userAgent = window.navigator.userAgent;
+		if (userAgent && /MSIE /.test(userAgent)) {
+
+			$.browser.msie = true;
+			$.browser.version = (/MSIE (\d+)/.exec(userAgent))[1];
+		}
+	}
+})();
+

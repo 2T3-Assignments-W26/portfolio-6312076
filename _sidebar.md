@@ -7,3 +7,5 @@
 
 
 - About Me
+  - [Markdown](/David_Coulombe_6312076.md)
+  - [Markdown](/myprojects.md)

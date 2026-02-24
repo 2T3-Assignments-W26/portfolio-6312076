@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<!-- saved from url=(0231)https://johnabbott.omnivox.ca/WebApplication/Module.MIOE/Commun/Message/MioDetail.aspx?C=JAC&E=P&L=ANG&Ref=20260224100451&m=caeb250f-eda0-4081-8727-85041893afef0&recherche=Search%20in%20your%20Mio...&categorie=SEARCH_FOLDER_MioRecu -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head id="ctl00_pageHead"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	Omnivox - Mio - Messaging In Omnivox
+</title><link rel="shortcut icon" href="https://johnabbott.omnivox.ca/favicon.ico" type="image/x-icon"><link rel="icon=" href="https://johnabbott.omnivox.ca/favicon.ico" type="image/x-icon">
+
+	<script src="./Lib_General.js.download" type="text/javascript"></script>
+	<script src="./jquery.js.download" type="text/javascript"></script>
+    <script src="./jq_browser_fix.js.download" type="text/javascript"></script>
+	<script src="./jquery-ui.js.download" type="text/javascript"></script>
+	<script src="./jquery-template.js.download" type="text/javascript"></script>
+	<script language="Javascript" src="./JavaScript.js.download" type="text/javascript"></script>
+	<script language="Javascript" src="./PopupWorker.js.download" type="text/javascript"></script>
+
+	
+	<link href="./CssGlobal.min.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		@import url('/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Default/css/Generique.css');
+	</style>
+
+	<!--<base target="_self">--><base href="." target="_self">
+<link href="./MioDetail.css" type="text/css" rel="stylesheet"></head>
+<body id="ctl00_bodyPage" onkeypress="MsgConfirmation_EscapeHandler(this, event);MsgConfirmation_EscapeHandler(this, event);">
+	
+	
+	<script type="text/javascript">
+	// <![CDATA[
+
+		//On regarde voir si on est dans la page de nouveau message et qu'on est en full view.
+		
+
+		function mouseOutGrip()
+		{
+			if(window.top.frames[2])
+			{
+				if(window.top.frames[2].window.frames[1])
+				{
+					try
+					{
+						if(window.top.frames[2].window.frames[1].document.getElementById("fakeGrip"))
+							window.top.frames[2].window.frames[1].document.getElementById("fakeGrip").style.backgroundImage='url(\'/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_equinox/images/Gen_FakeBorder.jpg\')';
+						else
+							return false;
+					}catch(e)
+					{
+						return false;
+					}
+				}
+				else
+					return false;
+			}
+			else
+			{
+				return false;
+			}
+		}
+		
+		
+			AddEvent(window, 'load', function (){ window.onerror = errorHandlerProd_MIO;});
+		
+	// ]]>
+		
+
+	
+	</script>
+	
+
+    <!-- [F21559] Geoffrey : Si on est sur une tablette, on change les styles du container. -->
+    
+        <div id="container" onscroll="OnDivHautScroll()" onmouseover="mouseOutGrip()">
+    <form name="aspnetForm" method="post" action="https://johnabbott.omnivox.ca/WebApplication/Module.MIOE/Commun/Message/MioDetail.aspx?C=JAC&amp;E=P&amp;L=ANG&amp;Ref=20260224100451&amp;m=caeb250f-eda0-4081-8727-85041893afef0&amp;recherche=Search+in+your+Mio...&amp;categorie=SEARCH_FOLDER_MioRecu" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="2xC9yj8t93rnZlvTa2+zGrUvJMQq2qaVnwcYEikM7K2OJTJL4s+dB9Uu8FuS/B8RMAkbhJNlNyTlCw4VqIFg811iq3YTkI0E/COkE4lbBF5VCiIu7YJ2LzBiUMtq+akvqt6fMabdaSl1LEQpQdzP46HI4NAcUkXq0Uy9jZf+ns8rEvnBrqXYiRbdtlRF/XRt21qx1N1IwpY4hea6zVzYTZkiP2fwoNc5cW9xDBHpEJqzLq5eoKzIbvgnaOdiJXTCFZ8bMpygzPeY+CF0plrVvwn0dfLJ2CN6UuSrIWWPX9V+dWcdkPxBMuirfcs69S2VNsf2hpMwz7vqpexIPBZI9AUN1ZW4FIsTrj7DO1eF7n69DTvn2n2PTIdPLV83HrCil1VWinu0E7sAttSMkui9lqCxotT9cjgKlZ954jtbb6uehCEzJwhg1qzPf+di9AHkFdYt20+L4kCqepvMyGkoTE2v0B+MBW/vCHqcL11uKLghGB0Yp3nsRauxtipaOibdMjYvChE7LrzpDcR+rWNziAUSynd/54he4owLzrCvdh2jDFzm1vccWsnoTwLJeWE6ihKIxFiiEOX54RMDKsnf0eUe/4JiUB3G/7P4170HYCD7GN12/IWxA9JE441YsmQ65Y2RlLd9OrLMyu6IHX+IV7LtaeMsMBaIGInbBalMasu8h5PxhhzPqr608gn5G0vl72YXVLkUAVknnjAtVr1671Ef3gwfWenmmfHL9aoOmxiaGGzvXVpsPN8nZ7ARWRFlDqBUL7MatvSyzUmudA3GDVHhs2TbLfjhXsaKi0/iNujOE9JO4EtdKLylkUDfpudl0dHVOWw+JmqucVjX0sH/fK0/MZNirI3p0VToOfih8KRrtVJHycxnUaYhixYJSsI2cUBbmgRafPHAJir8fGxjVhQe0QF25zawYCjIiFbE0xVdV/BYmFXnHc3jxgEw9xppXLThVDAqX7jnf1taqAX9TCDuwv6gH3cQa6E0r3HLLpfju1a4ow/6rVFtfWs5gk8wNIoBqKZn4I24fVxBG2LTvCjYwv/lSSdLZiaDfLVuKhnfzQb0qy+tt0p8+CLMTpX3DGsNfqoWQrcjaLucHu6BOuXfKQ+W4Nm5+UPLe+p9u3pMoBUEFya+WEGUh478iw7wklRN3paikA7g5JSqlAjEnhAM819eRdZweMwXGoLJIcyVpT0IKJ6BPvDUKt7TjS9CcX6nvAX+YeFNtJ2H+jDO+vRMGNg2To02xpka6VfP+XpxeunSXgm0eGJb8lECfclWL1WemKEV4BTg2LEPM6EgV5V2dHzRNUS72WoLQ+E5kCz+DxXbmVcfp1tnzpmL7mbEpWY+TORelyN+fcWZ4D5zd8bSPu716gE6xv7QLaqYJCeZJhPO3nveHOSasziNp1EtlPFYk8ifNtB++e5N6mDo9WNMLFicM+5ZdmLdWNT854b2oOcxcXq4dMpJ1W7ApmG+8SrJSv1HGPyvy9H0aVZlgzC1lPjeDfpVbVnLgNX4w4RP8pd/bRsS471D/QU303LT76wShDmORpAHaViQMr6ptTdl8BU4Tc8p5e8ba8zIaPrmpKGXvKl6qNBtwl7sc4dotKgUbdLA2AgjQGbNeMIajTTVexaPyyII71e/gQ==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="08926D7F">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+</div>
+			<div class="preventClickOverlayHidden" id="ClickOverlayContent"></div>
+			
+	<div id="ctl00_cntFormulaire_confirmDelete_divConfirmNoSave" class="hideConfirm">
+	<table cellpadding="0" cellspacing="0" class="tblMsgConfirm" width="100%">
+		<tbody><tr>
+			<td style="vertical-align:top;width:130px;text-align:center;" rowspan="2">
+				<img src="./MIO_AffMsgHead.gif" alt="">
+				<img id="ctl00_cntFormulaire_confirmDelete_imgHead" src="./MIO_AffMsg_Qst.gif" style="border-width:0px;">
+			</td>
+			<td style="vertical-align:top;" class="tdMsgConfirm" height="100">
+				<strong>Delete</strong><br><br>
+				Delete the selected messages?<br><br>
+			</td>
+		</tr>
+		<tr>
+			<td style="vertical-align:top;padding-top: 5px; border-top: 1px solid orange;" align="right">
+				<table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="tdDiagConf"><table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td style="vertical-align:top;"><a href="javascript:document.forms[&#39;aspnetForm&#39;].ctl00$cntFormulaire$confirmDelete$btnAction.value=&#39;OUI&#39;;document.forms[&#39;aspnetForm&#39;].elements[&#39;ctl00$cntFormulaire$confirmDelete$btnAction&#39;].value=&#39;OUI&#39;;javascript:document.forms[&#39;aspnetForm&#39;].submit()" id="ctl00_cntFormulaire_confirmDelete_divConfirmNoSave_default"><img src="./MIO_lft_nor.gif" alt="Yes" border="0"></a></td><td class="btnPopupImg" style="background-image:url(&#39;/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Default/Images/MIO_nor_tile.gif&#39;);background-repeat:repeat-x;vertical-align:top;"><a href="javascript:document.forms[&#39;aspnetForm&#39;].ctl00$cntFormulaire$confirmDelete$btnAction.value=&#39;OUI&#39;;document.forms[&#39;aspnetForm&#39;].elements[&#39;ctl00$cntFormulaire$confirmDelete$btnAction&#39;].value=&#39;OUI&#39;;javascript:document.forms[&#39;aspnetForm&#39;].submit()" class=""><img src="./mio_Continuer.svg" border="0" title="Yes"></a></td><td class="btnGenerique" style="background-image:url(&#39;/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Default/Images/MIO_nor_tile.gif&#39;);background-repeat:repeat-x;"><a href="javascript:document.forms[&#39;aspnetForm&#39;].ctl00$cntFormulaire$confirmDelete$btnAction.value=&#39;OUI&#39;;document.forms[&#39;aspnetForm&#39;].elements[&#39;ctl00$cntFormulaire$confirmDelete$btnAction&#39;].value=&#39;OUI&#39;;javascript:document.forms[&#39;aspnetForm&#39;].submit()" id="ctl00_cntFormulaire_confirmDelete_divConfirmNoSave_default"><div style="height:25px;padding-top:5px;cursor:pointer;">Yes</div></a></td><td style="vertical-align:top;"><a href="javascript:document.forms[&#39;aspnetForm&#39;].ctl00$cntFormulaire$confirmDelete$btnAction.value=&#39;OUI&#39;;document.forms[&#39;aspnetForm&#39;].elements[&#39;ctl00$cntFormulaire$confirmDelete$btnAction&#39;].value=&#39;OUI&#39;;javascript:document.forms[&#39;aspnetForm&#39;].submit()" id="ctl00_cntFormulaire_confirmDelete_divConfirmNoSave_default"><img src="./MIO_rth_nor.gif" alt="Yes" border="0"></a></td></tr></tbody></table></td><td class="tdDiagConfLast"><table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td style="vertical-align:top;"><a href="javascript:MsgConfirmation_FermeBoiteMsgMioCourante();"><img src="./MIO_lft_ann.gif" alt="No" border="0"></a></td><td class="btnPopupImg" style="background-image:url(&#39;/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Default/Images/MIO_ann_tile.gif&#39;);background-repeat:repeat-x;vertical-align:top;"><a href="javascript:MsgConfirmation_FermeBoiteMsgMioCourante();" class=""><img src="./mio_Supprimer.svg" border="0" title="No"></a></td><td class="btnGenerique" style="background-image:url(&#39;/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Default/Images/MIO_ann_tile.gif&#39;);background-repeat:repeat-x;"><a href="javascript:MsgConfirmation_FermeBoiteMsgMioCourante();"><div style="height:25px;padding-top:5px;cursor:pointer;">No</div></a></td><td style="vertical-align:top;"><a href="javascript:MsgConfirmation_FermeBoiteMsgMioCourante();"><img src="./MIO_rth_ann.gif" alt="No" border="0"></a></td></tr></tbody></table></td></tr></tbody></table>
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+<input type="hidden" name="ctl00$cntFormulaire$confirmDelete$btnAction" id="ctl00$cntFormulaire$confirmDelete$btnAction" value="none">
+
+
+<script>
+var boiteMioAfficheCourante = null;
+var strBoiteMioAfficheCourante = null;
+
+/**
+ * 
+ */
+function GetElementByIDSky(strId)
+{
+	var divContenu = document.getElementById(strId)
+	if (divContenu == null)
+	{
+		for(i = 0; i<window.top.frames.length;i++) 
+		{
+			if(window.top.frames[i]) 
+			{
+				if(window.top.frames[i].document)
+				{
+					if (window.top.frames[i].document.getElementById(strId)) 
+					{
+						return divContenu;
+					}//if
+						
+				}//if
+			}//if
+		}//for
+	}
+	
+	return divContenu;
+} //GetElementByIDSky
+function MsgConfirmation_EscapeHandler(obj, evenement)
+{
+	if (evenement.keyCode+"" == "27")
+		MsgConfirmation_FermeBoiteMsgMioCourante();
+	if (evenement.keyCode+"" == "13")
+	{
+		var objLien = GetElementByIDSky(strBoiteMioAfficheCourante + "_default");
+		if (objLien == null)
+			return;
+		
+		var naviguate = objLien.attributes["href"];
+		var strToEval = naviguate.value.replace(/javascript:/g, "");
+		eval(strToEval);
+	}
+}
+function MsgConfirmation_FermeBoiteMsgMioCourante()
+{
+	if (boiteMioAfficheCourante != null)
+	{
+		ShowLayer();
+		boiteMioAfficheCourante.className = "hideConfirm";
+	}
+}
+function MsgConfirmation_AfficheBoiteMsgMio(idDivContenu, windowSelf)
+{
+	HideLayer();
+	strBoiteMioAfficheCourante = idDivContenu;
+	boiteMioAfficheCourante = GetElementByIDSky(idDivContenu);
+	boiteMioAfficheCourante.className = "affConfirm";
+	boiteMioAfficheCourante.style.top =  (windowSelf.document.getElementById('container').scrollTop + 10) + 'px';
+	
+	var pos = Math.floor((MsgConfirmation_getScreenWidth() - 460) / 2);
+	if (pos < 0)
+		pos = 3;
+	boiteMioAfficheCourante.style.left = pos + "px";
+	
+} //MsgConfirmation_AfficheBoiteMsgMio
+
+
+function MsgConfirmation_getScreenWidth()
+{
+	var currentWidth;
+	 if( typeof( window.innerWidth ) == 'number' ) {
+	//Non-IE
+	currentWidth = window.innerWidth;
+	
+  } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+	//IE 6+ in 'standards compliant mode'
+	currentWidth = document.documentElement.clientWidth;            
+	
+  } else if( document.body && ( document.body.clientWidth) ) {
+	//IE 4 compatible
+	currentWidth = document.body.clientWidth;
+	
+  } // if
+  
+  return currentWidth;
+}
+
+
+
+function HideLayer() 
+{
+	if (true)
+		return;
+    // looping through all forms on the page
+    for (f = 0; f < document.forms.length; f++)
+    {
+        var elements = document.forms[f].elements;
+        // looping through all elements on certain form
+        for (e = 0; e < elements.length; e++)
+        {
+            if (elements[e].type == "select-one")
+            {
+                elements[e].style.visibility  = 'hidden';
+            }
+        }
+    }
+}
+
+function ShowLayer()
+{
+	if (true)
+		return;
+    // looping through all forms on the page
+    for (f = 0; f < document.forms.length; f++)
+    {
+        var elements = document.forms[f].elements;
+        // looping through all elements on certain form
+        for (e = 0; e < elements.length; e++)
+        {
+            if (elements[e].type == "select-one")
+            {
+                elements[e].style.visibility  = 'visible';
+            }
+        }
+    }
+}
+
+</script>
+
+		<a id="ctl00_cntFormulaire_lnkRestaurer" href="javascript:__doPostBack(&#39;ctl00$cntFormulaire$lnkRestaurer&#39;,&#39;&#39;)"></a>
+		<input type="hidden" name="ctl00$cntFormulaire$lnkCategoriser" id="ctl00$cntFormulaire$lnkCategoriser" value="none">
+	
+	
+	
+	<div id="divAffichage" style="overflow:auto;width:100%;">
+		<span id="spanAffichage" style="display: block;">
+			
+
+<style type="text/css">
+	:root {
+		--svgcolor: #0279c9;
+	}
+	.Msg, .Msg tbody {
+		display: block;
+		width: 100%;
+		font-size: 15px;
+	}
+
+		.Msg .row-to-flex {
+			display: flex;
+			width: 80%;
+			min-width: 671px;
+			min-height:26px;
+		}
+
+		.Msg .row-to-flex.aPhoto {
+			width:67%;
+			min-width:580px;
+		}
+
+		.Msg .row-to-flex:nth-child(1), .Msg .row-to-flex:nth-child(2), .Msg .row-to-flex.row-date, .Msg .row-to-flex.row-attachements{
+			border-bottom: 1px #bdd2e0 double;
+		}
+
+		.Msg td {
+			padding: 4px;
+			padding-left: 0px;
+		}
+
+		.Msg .cDe {
+			display: flex;
+			padding-left: 1px;
+		}
+
+		.Msg #options-wrapper {
+			position: fixed;
+			width: 140px;
+			right: 35px;
+			top: 13px;
+		}
+
+		.Msg #options {
+			display: inline-grid;
+		}
+
+		.Msg #options .option-wrapper{
+			display:flex;
+		}
+
+			.Msg #options .option-wrapper .svg-icon{
+				width:21px;
+				height:28px;
+			}
+
+			.Msg #options .option-wrapper a {
+				display: block;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				margin-left: 10px;
+				background-repeat: no-repeat;
+				color: #0169b0;
+			}
+
+		.Msg .cA, .Msg .cDate, .Msg .cAttach {
+			vertical-align: top;
+		}
+
+		.Msg .cDate {
+			padding-left: 1px;
+		}
+
+		.Msg .cAttach {
+			padding-left: 2px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+		.Msg .cA {
+			position: relative;
+			padding: 0px;
+			top: 0px;
+			left: 0px;
+			font-size: 15px;
+		}
+
+		.Msg .cAttach a {
+			color: #888a8c;
+			white-space:nowrap;
+			min-width:0;
+			line-height: 22px;
+		}
+
+		.Msg .cAttach img {
+			place-self: flex-start;
+			padding-right: 20px;
+			width: 18px;
+			height:18px;
+		}
+
+		.Msg img:not(img[data-typeofimage="userImage"]) {
+			width: 18px;
+			height:18px;
+			vertical-align: sub;
+			user-select: none;
+			pointer-events: none;
+		}
+
+		.Msg .lienAjoutFavoris
+		{
+			 color: green;
+		}
+
+		.Msg .cDe img {
+			height: 18px;
+			vertical-align: middle;
+		}
+
+		.Msg .cSujet, .Msg .cDe {
+			min-width: 482px;
+			font-size: 15px;
+			vertical-align: top;
+		}
+
+		.Msg .cSujet {
+			padding-top: 15px;
+			padding-left: 0px;
+			font-weight: 500;
+			font-size: 19px;
+			word-break:break-word;
+			overflow-wrap:break-word;
+			overflow-x:hidden;
+		}
+
+		.Msg .leftHeader {
+			min-width: 90px;
+			font-weight: 500;
+			vertical-align: top;
+		}
+
+		.Msg .cBody {
+			font-size: 15px;
+			padding: 10px 0px 10px 0px;
+			color: #1d4a67;
+			background-color: white;
+		}
+
+		.Msg .cPhoto div img {
+			width: auto;
+			height: 90px;
+			min-width: 73px;
+			padding: 3px;
+			position: fixed;
+			right: 183px;
+			top: 20px;
+		}
+
+		.previewMessageWrapper .Msg .cPhoto div img {
+			top:105px;
+		}
+
+		.Msg .cPhoto {
+			vertical-align: top;
+			background-color: white;
+		}
+
+	.lstDestH {
+		width: 100%;
+		overflow: hidden;
+		height:20,5px;
+	}
+
+	.lstDestS {
+		height: auto;
+		overflow: auto;
+	}
+
+	.tblDest td {
+		padding: 1px;
+		padding-left: 0px;
+		font-size: 15px;
+		color: Green;
+	}
+
+		.tblDest td.nl {
+			padding-left: 40px;
+		}
+
+	td.cDe a.dest_etudiant,
+	td.cDe a.dest_professeur,
+	td.cDe a.dest_gestionnaire,
+	td.cDe a.dest_multdest,
+	td.cDe a.dest_aucundest {
+		display: block;
+		margin-left: 1px;
+		padding: 1px 0 1px 40px;
+		background: transparent none no-repeat scroll center left;
+		background-size: 18px 18px;
+	}
+
+		td.cDe a.dest_etudiant:hover,
+		td.cDe a.dest_professeur:hover,
+		td.cDe a.dest_gestionnaire:hover,
+		td.cDe a.dest_multdest:hover,
+		td.cDe a.dest_aucundest:hover {
+			background-image: url('/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Commun/images/mio_Ajouter.svg');
+			background-position: 0px center;
+			background-repeat: no-repeat;
+		}
+
+	td.cDe a.dest_etudiant {
+		background-image: url('/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Commun/images/mio_Type1.svg');
+		background-repeat: no-repeat;
+		background-position: 0px 2px;
+	}
+
+	td.cDe a.dest_professeur {
+		background-image: url('/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Commun/images/mio_Type2.svg');
+		background-repeat: no-repeat;
+		background-position: 0px 2px;
+	}
+
+	td.cDe a.dest_gestionnaire {
+		background-image: url('/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Commun/images/mio_Type2.svg');
+		background-repeat: no-repeat;
+		background-position: 0px 2px;
+	}
+
+	td.cDe a.dest_multdest {
+		background-image: url('/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Commun/images/mio_TypeMulti1.svg');
+		background-repeat: no-repeat;
+		background-position: 0px 2px;
+	}
+
+	td.cDe a.dest_aucundest {
+		background-image: url('/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Commun/images/mio_Type3.svg');
+		background-repeat: no-repeat;
+		background-position: 0px 2px;
+	}
+
+	td.cDe .prvLienInactif {
+		display: inline;
+		margin-right: 23px;
+		padding-left: 1px;
+		cursor: default;
+		float: none;
+	}
+
+	td.cDe .prvLienActif {
+		display: inline;
+		float: none;
+		margin-right: 3px;
+		cursor: pointer;
+		font-weight: normal;
+		color: #0169b0;
+	}
+
+	td.nd a.dest_etudiant,
+	td.nd a.dest_professeur,
+	td.nd a.dest_gestionnaire,
+	td.nd a.dest_multdest,
+	td.nd a.dest_aucundest {
+		display: block;
+		padding: 1px 0 1px 41px;
+		margin-left: 0px;
+		background: transparent none no-repeat scroll center left;
+		background-size: 18px 18px;
+		background-position: 1px 2px;
+	}
+
+		td.nd a.dest_etudiant:hover,
+		td.nd a.dest_professeur:hover,
+		td.nd a.dest_gestionnaire:hover,
+		td.nd a.dest_multdest:hover,
+		td.nd a.dest_aucundest:hover {
+			background-image: url('/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Commun/images/mio_Ajouter.svg')
+		}
+
+	td.nd a.dest_etudiant {
+		background-image: url('/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Commun/images/mio_Type1.svg');
+	}
+
+	td.nd a.dest_professeur {
+		background-image: url('/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Commun/images/mio_Type2.svg');
+	}
+
+	td.nd a.dest_gestionnaire {
+		background-image: url('/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Commun/images/mio_Type3.svg');
+	}
+
+	td.nd a.dest_multdest {
+		background-image: url('/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Commun/images/mio_TypeMulti1.svg');
+	}
+
+	td.nd a.dest_aucundest {
+		background-image: url('/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Commun/images/mio_Type4.svg');
+	}
+
+	.tblDest td a {
+		font-size: 15px;
+		color: #0169b0;
+		font-weight: normal;
+	}
+
+		.tblDest td a img {
+			height: 18px;
+		}
+
+	#tdACont {
+		padding: 4px;
+		padding-left:1px;
+		font-size: 15px;
+		white-space: nowrap;
+	}
+
+	#tdACont.listeDestinataireVide img{
+		padding-right:24px;
+	}
+
+		#tdACont img {
+			height: 18px;
+			padding-left: 1px;
+			padding-right: 19px;
+		}
+
+	.destCarret .svg-icon{
+		outline:none;
+		height:21px;
+		width:21px;
+	}
+
+	.highlightRecherche {
+		background-color: Yellow;
+	}
+	/*le tag pre est utilisé lorsqu'un MIO est envoyé par le mobile. */
+	pre {
+		white-space: pre-wrap; /* css-3 */
+		white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+		white-space: -pre-wrap; /* Opera 4-6 */
+		white-space: -o-pre-wrap; /* Opera 7 */
+		word-wrap: break-word; /* Internet Explorer 5.5+ */
+		font-family: inherit;
+	}
+
+	#aspnetForm {
+		height: 100%;
+	}
+	/* on set le message relative comme sa si ya qqch d'absolute top 0 dans le mio y va pas sortir de ce div */
+	div#contenuWrapper {
+		position: relative;
+		word-break:break-word;
+		overflow-wrap:break-word;
+		overflow-x:hidden;
+	}
+
+		/* On ne veut pas afficher les <p> avec du margin */
+		div#contenuWrapper p {
+			margin: 0px;
+		}
+
+		div#contenuWrapper #radePasteHelper {
+			position: static !important;
+		}
+
+		div#contenuWrapper img[data-typeofimage="userImage"] {
+			max-width:100%;
+		}
+
+	.isOpeningClara {
+		padding-right: 25px;
+		background-image: url(/images/General/wait.gif);
+		background-repeat: no-repeat;
+		background-position: right;
+		background-size: 28px 14px;
+	}
+
+	.tdDiagConf {
+		padding-right: 15px;
+		padding-bottom: 5px
+	}
+
+	.tdDiagConfLast {
+		padding-right: 10px;
+		padding-bottom: 5px
+	}
+
+	@media only screen and (max-width:878px) {
+		.Msg #options-wrapper {
+			padding-left: 105px;
+			min-width: 140px;
+			position: static;
+		}
+
+		.Msg .cPhoto div img {
+			position: static;
+			padding-top: 7px;
+			padding-bottom: 0px;
+			padding-left: 27px;
+		}
+
+		.fullViewWrapper .Msg .cPhoto div img {
+			position:fixed;
+			padding-top:2px;
+		}
+
+		div#contenuWrapper {
+			max-width: 100%;
+		}
+	}
+
+	@media only screen and (max-width:701px){
+		.fullViewWrapper .Msg .cPhoto div img {
+			position:static;
+		}
+	}
+
+	.fullViewWrapper .Msg .cSujet, .fullViewWrapper div#contenuWrapper{
+		max-width: 100%;
+	}
+
+	.fullViewWrapper .Msg .row-to-flex {
+		width:99%;
+	}
+
+	.fullViewWrapper .Msg .row-to-flex.aPhoto{
+		width:84%;
+	}
+
+	.fullViewWrapper .Msg .cPhoto div img{
+		right:18px;
+		top:93px;
+	}
+
+</style>
+
+<table cellspacing="3" cellpadding="0" border="0" class="Msg"><tbody><tr class="row-to-flex row-de aPhoto"><td class="leftHeader">From</td><td class="cDe"><a class="prvLienInactif" href="javascript:;" title="Student"><img src="./mio_Type1.svg" alt="Student"></a>David Coulombe </td><td class="cPhoto" width="1" rowspan="5"><div><img src="./PhotoEtudiant.ashx" alt=""></div></td><td id="options-wrapper" valign="top" rowspan="5"><div id="options"><div class="option-wrapper"><div class="svg-icon " tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="var(--svgcolor)" focusable="false" width="100%" height="100%" aria-hidden="true" aria-labelledby="SvgIcon-mio_Reply.svg-2AF04C"><path d="M6.675,12.745,2.284,8.6a.772.772,0,0,1,0-1.2L6.675,3.294c.312-.262.479-.4.757-.4a.666.666,0,0,1,.663.685v2.1h.161c4,0,5.744,2.566,5.744,6.679,0,.479-.273.746-.573.746a.705.705,0,0,1-.685-.412c-.968-1.82-2.332-2.366-4.486-2.366H8.1v2.126a.636.636,0,0,1-.652.652A1.146,1.146,0,0,1,6.675,12.745Z"></path><title id="SvgIcon-mio_Reply.svg-2AF04C" xmlns=""></title></svg></div><a href="https://johnabbott.omnivox.ca/WebApplication/Module.MIOE/Commun/Composer/NouveauMessage.ashx?IdMessage=caeb250f-eda0-4081-8727-85041893afef&amp;Action=Reply&amp;C=JAC&amp;E=P&amp;L=ANG&amp;Ref=20260224100453" target="_parent" title="Reply">Reply</a></div><div class="option-wrapper"><div class="svg-icon " tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="var(--svgcolor)" focusable="false" width="100%" height="100%" aria-hidden="true" aria-labelledby="SvgIcon-mio_ReplyAll.svg-F19AED"><path d="M4.6,12.165.749,8.525a.678.678,0,0,1,0-1.05L4.6,3.869c.273-.229.42-.351.664-.351a.528.528,0,0,1,.581.444v.21l-3.1,2.834a1.316,1.316,0,0,0-.474,1,1.341,1.341,0,0,0,.474.992l3.1,2.853v.21c0,.225-.244.425-.571.425A1,1,0,0,1,4.6,12.165Zm2.472,0-3.86-3.64A.744.744,0,0,1,2.967,8a.717.717,0,0,1,.249-.527l3.86-3.606c.273-.229.42-.351.659-.351a.581.581,0,0,1,.582.6V5.965h.141c3.513,0,5.042,2.252,5.042,5.863,0,.42-.239.654-.5.654a.611.611,0,0,1-.6-.361c-.855-1.6-2.052-2.076-3.943-2.076H8.317v1.866a.555.555,0,0,1-.572.571A1,1,0,0,1,7.076,12.165Z"></path><title id="SvgIcon-mio_ReplyAll.svg-F19AED" xmlns=""></title></svg></div><a href="https://johnabbott.omnivox.ca/WebApplication/Module.MIOE/Commun/Composer/NouveauMessage.ashx?IdMessage=caeb250f-eda0-4081-8727-85041893afef&amp;Action=ReplyAll&amp;C=JAC&amp;E=P&amp;L=ANG&amp;Ref=20260224100453" target="_parent" title="Reply to all">Reply to all</a></div><div class="option-wrapper"><div class="svg-icon " tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="var(--svgcolor)" focusable="false" width="100%" height="100%" aria-hidden="true" aria-labelledby="SvgIcon-mio_Forward.svg-10D293"><path d="M7.905,12.455V10.329H7.744c-2.154,0-3.518.546-4.492,2.366a.7.7,0,0,1-.684.412c-.295,0-.568-.267-.568-.746C2,8.248,3.742,5.682,7.744,5.682h.161v-2.1a.666.666,0,0,1,.663-.685c.272,0,.439.139.757.4L13.716,7.4a.772.772,0,0,1,0,1.2L9.325,12.745a1.167,1.167,0,0,1-.768.362A.636.636,0,0,1,7.905,12.455Z"></path><title id="SvgIcon-mio_Forward.svg-10D293" xmlns=""></title></svg></div><a href="https://johnabbott.omnivox.ca/WebApplication/Module.MIOE/Commun/Composer/NouveauMessage.ashx?IdMessage=caeb250f-eda0-4081-8727-85041893afef&amp;Action=Forward&amp;C=JAC&amp;E=P&amp;L=ANG&amp;Ref=20260224100453" target="_parent" title="Forward">Forward</a></div><div class="option-wrapper"><div class="svg-icon " tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="var(--svgcolor)" focusable="false" width="100%" height="100%" aria-hidden="true" aria-labelledby="SvgIcon-mio_Supprimer.svg-1A0C"><path d="M12.976,3.967a.833.833,0,0,0,0-.4.731.731,0,0,0-.2-.347.776.776,0,0,0-.347-.2.8.8,0,0,0-.394,0,.729.729,0,0,0-.339.192L8,6.91,4.308,3.216a.707.707,0,0,0-.339-.189.882.882,0,0,0-.4,0,.714.714,0,0,0-.352.2.747.747,0,0,0-.19.347.808.808,0,0,0,0,.4.736.736,0,0,0,.184.342L6.911,8l-3.7,3.7a.728.728,0,0,0-.189.335.82.82,0,0,0,0,.4.705.705,0,0,0,.2.345.734.734,0,0,0,.352.2.8.8,0,0,0,.4,0,.712.712,0,0,0,.339-.192L8,9.09l3.7,3.693a.715.715,0,0,0,.343.192.766.766,0,0,0,.392,0,.788.788,0,0,0,.345-.2.737.737,0,0,0,.2-.352.829.829,0,0,0,0-.4.731.731,0,0,0-.193-.339L9.091,8l3.692-3.691A.726.726,0,0,0,12.976,3.967Z"></path><title id="SvgIcon-mio_Supprimer.svg-1A0C" xmlns=""></title></svg></div><a href="javascript:MsgConfirmation_AfficheBoiteMsgMio(&#39;ctl00_cntFormulaire_prvMsg_confirmDelete_divConfirmNoSave&#39;, window.self);" target="_self" title="Delete">Delete</a></div><div class="option-wrapper"><div class="svg-icon " tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="var(--svgcolor)" focusable="false" width="100%" height="100%" aria-hidden="true" aria-labelledby="SvgIcon-mio_Print.svg-BA10C"><path d="M12.2,5.6H3.8A1.8,1.8,0,0,0,2,7.4V11H4.4v2.4h7.2V11H14V7.4A1.8,1.8,0,0,0,12.2,5.6Zm-1.8,6.6H5.6v-3h4.8ZM12.2,8a.6.6,0,1,1,.6-.6A.6.6,0,0,1,12.2,8Zm-.6-5.4H4.4V5h7.2Z"></path><title id="SvgIcon-mio_Print.svg-BA10C" xmlns=""></title></svg></div><a href="javascript:OpenCentre(&#39;/WebApplication/Module.MIOE/Commun/Message/ImpressionMessage.aspx?IdMessage=caeb250f-eda0-4081-8727-85041893afef&#39;, &#39;MIO_AfficheMessageImpression&#39;, &#39;fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,resizable=yes,scrollbars=yes&#39;, 750, 550, false);" target="_self" title="Print">Print</a></div></div></td></tr><tr class="row-to-flex aPhoto"><td class="leftHeader">To</td><td class="cA"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td id="tdACont"><div id="lst" class="lstDestH"><table cellspacing="0" cellpadding="0" border="0" class="tblDest"><tbody><tr><td class="nd"><a href="javascript:;" title="Student" style="cursor:default;display:inline;"><img src="./mio_Type1.svg" alt="Student"></a>&nbsp;David Coulombe</td><td class="nl">Read on 2026-02-19</td></tr></tbody></table></div></td><td class="destCarret" valign="top" width="21px"></td></tr></tbody></table></td></tr><tr class="row-to-flex row-date aPhoto"><td class="leftHeader">Date</td><td class="cDate">Thu Feb-19-2026 at 12:45&nbsp;-&nbsp;5 days ago</td></tr><tr class="row-to-flex row-attachements aPhoto"><td class="leftHeader">File</td><td class="cAttach"><a href="https://johnabbott.omnivox.ca/WebApplication/Module.MIOE/Commun/Message/ReadAttachement.ashx?IdMessage=Y2FlYjI1MGYtZWRhMC00MDgxLTg3MjctODUwNDE4OTNhZmVm&amp;IdAttachement=MTY0NTRmMDctMWMxZi00YTA0LTgwMjMtYjc4ZGNiYjc4ZmY1&amp;C=JAC&amp;E=P&amp;L=ANG&amp;Ref=20260224100453" target="_blank"><img src="./zip.svg" align="center">&nbsp;New_Compressed_zipped_Folder.zip&nbsp;(593 KB)</a></td></tr><tr class="row-to-flex aPhoto"><td colspan="2" class="cSujet">send the doc</td></tr><tr class="row-to-flex aPhoto"><td colspan="4" class="cBody"><div id="contenuWrapper">d</div></td></tr></tbody></table>
+<div id="ctl00_cntFormulaire_prvMsg_confirmDelete_divConfirmNoSave" class="hideConfirm">
+	<table cellpadding="0" cellspacing="0" class="tblMsgConfirm" width="100%">
+		<tbody><tr>
+			<td style="vertical-align:top;width:130px;text-align:center;" rowspan="2">
+				<img src="./MIO_AffMsgHead.gif" alt="">
+				<img id="ctl00_cntFormulaire_prvMsg_confirmDelete_imgHead" src="./MIO_AffMsg_Qst.gif" style="border-width:0px;">
+			</td>
+			<td style="vertical-align:top;" class="tdMsgConfirm" height="100">
+				<strong>Delete</strong><br><br>
+				Do you really wish to delete this message?<br><br>
+			</td>
+		</tr>
+		<tr>
+			<td style="vertical-align:top;padding-top: 5px; border-top: 1px solid orange;" align="right">
+				<table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="tdDiagConf"><table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td style="vertical-align:top;"><a href="javascript:document.forms[&#39;aspnetForm&#39;].ctl00$cntFormulaire$prvMsg$confirmDelete$btnAction.value=&#39;OUI&#39;;document.forms[&#39;aspnetForm&#39;].elements[&#39;ctl00$cntFormulaire$prvMsg$confirmDelete$btnAction&#39;].value=&#39;OUI&#39;;javascript:document.forms[&#39;aspnetForm&#39;].submit()" id="ctl00_cntFormulaire_prvMsg_confirmDelete_divConfirmNoSave_default"><img src="./MIO_lft_nor.gif" alt="Yes" border="0"></a></td><td class="btnPopupImg" style="background-image:url(&#39;/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Default/Images/MIO_nor_tile.gif&#39;);background-repeat:repeat-x;vertical-align:top;"><a href="javascript:document.forms[&#39;aspnetForm&#39;].ctl00$cntFormulaire$prvMsg$confirmDelete$btnAction.value=&#39;OUI&#39;;document.forms[&#39;aspnetForm&#39;].elements[&#39;ctl00$cntFormulaire$prvMsg$confirmDelete$btnAction&#39;].value=&#39;OUI&#39;;javascript:document.forms[&#39;aspnetForm&#39;].submit()" class=""><img src="./mio_Continuer.svg" border="0" title="Yes"></a></td><td class="btnGenerique" style="background-image:url(&#39;/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Default/Images/MIO_nor_tile.gif&#39;);background-repeat:repeat-x;"><a href="javascript:document.forms[&#39;aspnetForm&#39;].ctl00$cntFormulaire$prvMsg$confirmDelete$btnAction.value=&#39;OUI&#39;;document.forms[&#39;aspnetForm&#39;].elements[&#39;ctl00$cntFormulaire$prvMsg$confirmDelete$btnAction&#39;].value=&#39;OUI&#39;;javascript:document.forms[&#39;aspnetForm&#39;].submit()" id="ctl00_cntFormulaire_prvMsg_confirmDelete_divConfirmNoSave_default"><div style="height:25px;padding-top:5px;cursor:pointer;">Yes</div></a></td><td style="vertical-align:top;"><a href="javascript:document.forms[&#39;aspnetForm&#39;].ctl00$cntFormulaire$prvMsg$confirmDelete$btnAction.value=&#39;OUI&#39;;document.forms[&#39;aspnetForm&#39;].elements[&#39;ctl00$cntFormulaire$prvMsg$confirmDelete$btnAction&#39;].value=&#39;OUI&#39;;javascript:document.forms[&#39;aspnetForm&#39;].submit()" id="ctl00_cntFormulaire_prvMsg_confirmDelete_divConfirmNoSave_default"><img src="./MIO_rth_nor.gif" alt="Yes" border="0"></a></td></tr></tbody></table></td><td class="tdDiagConfLast"><table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td style="vertical-align:top;"><a href="javascript:MsgConfirmation_FermeBoiteMsgMioCourante();"><img src="./MIO_lft_ann.gif" alt="No" border="0"></a></td><td class="btnPopupImg" style="background-image:url(&#39;/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Default/Images/MIO_ann_tile.gif&#39;);background-repeat:repeat-x;vertical-align:top;"><a href="javascript:MsgConfirmation_FermeBoiteMsgMioCourante();" class=""><img src="./mio_Supprimer.svg" border="0" title="No"></a></td><td class="btnGenerique" style="background-image:url(&#39;/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Default/Images/MIO_ann_tile.gif&#39;);background-repeat:repeat-x;"><a href="javascript:MsgConfirmation_FermeBoiteMsgMioCourante();"><div style="height:25px;padding-top:5px;cursor:pointer;">No</div></a></td><td style="vertical-align:top;"><a href="javascript:MsgConfirmation_FermeBoiteMsgMioCourante();"><img src="./MIO_rth_ann.gif" alt="No" border="0"></a></td></tr></tbody></table></td></tr></tbody></table>
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+<input type="hidden" name="ctl00$cntFormulaire$prvMsg$confirmDelete$btnAction" id="ctl00$cntFormulaire$prvMsg$confirmDelete$btnAction" value="none">
+
+
+<input type="hidden" name="ctl00$cntFormulaire$prvMsg$btnDelete" id="ctl00$cntFormulaire$prvMsg$btnDelete" value="none">
+<input type="hidden" name="ctl00$cntFormulaire$prvMsg$lnkRestaurerAction" id="ctl00$cntFormulaire$prvMsg$lnkRestaurerAction" value="none">
+
+
+
+
+<script type="text/javascript" src="./TelerikMethods.js.download"></script>
+<script src="./ClaraWebService.js.download" type="text/javascript"></script>
+<script type="text/javascript">
+	var isToggled = false;
+
+	function Restaurer() {
+		var message;
+		message = 'Do you really wish to undelete this message?';
+
+		if (confirm(message) != true)
+			return false;
+
+		return true;
+	}
+
+	function ConfirmationAjout() {
+		alert('The contact has been added successfully');
+	}
+
+	function ValiderAjout(prenom, nom) {
+		var texte;
+		texte = 'Do you wish to add [PRENOM] [NOM] to your list of favorite contacts?';
+
+		return confirm(texte.replace("[PRENOM]", prenom).replace("[NOM]", nom));
+	}
+
+	function ToggleDest() {
+		if (!isToggled) {
+			GE("lst").className = "lstDestS";
+			$("#imgToggle").html('<div class="svg-icon "  tabindex=\'-1\'><svg viewBox="0 0 16 16" width="100%" xmlns="http://www.w3.org/2000/svg" fill="var(--svgcolor)" focusable="false" height="100%" aria-hidden="true" aria-labelledby="SvgIcon-mio_CarretDown.svg-D0DC0F"><path transform="rotate(-180 8,7)" d="m8,2a6,6 0 1 0 6,6a6,6 0 0 0 -6,-6zm0,7.2l-2.4,-2.4l4.8,0l-2.4,2.4z" /><title id="SvgIcon-mio_CarretDown.svg-D0DC0F" xmlns=""></title></svg></div>');
+			GE("imgToggle").style.marginTop = "3px";
+			GE("imgToggle").style.marginLeft = "17px";
+			isToggled = true;
+		}
+		else {
+			GE("lst").className = "lstDestH";
+			$("#imgToggle").html('<div class="svg-icon "  tabindex=\'-1\'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="100%" fill="var(--svgcolor)" focusable="false" height="100%" aria-hidden="true" aria-labelledby="SvgIcon-mio_Carret.svg-79DB61"><path d="M8,2a6,6,0,1,0,6,6A6,6,0,0,0,8,2ZM8,9.2,5.6,6.8h4.8Z" /><title id="SvgIcon-mio_Carret.svg-79DB61" xmlns=""></title></svg></div>');
+			GE("imgToggle").style.marginTop = "";
+			GE("imgToggle").style.marginLeft = "";
+			isToggled = false;
+		}
+	}//ToggleDest
+
+	(function () {
+		document.addEventListener('DOMContentLoaded', function () {
+			var serverVariables = {
+				ajaxErrorMsg: "An error occurred while accessing the student's file in Clara"
+			};
+			Skytech.WebService.Clara.init(serverVariables)
+		});
+	})();
+
+	function AfficheMessageErreurRestaurerPreview() {
+		alert('Cannot restore the selected Mio because the size of the attached files exceeds the available space.');
+	}
+
+
+</script>
+<input type="hidden" name="ctl00$cntFormulaire$prvMsg$lnkAjout" id="ctl00$cntFormulaire$prvMsg$lnkAjout" value="none">
+
+		</span>
+	</div>
+	<script type="text/javascript">
+		var isAfficheL = false;
+		var isAfficheReply=false;
+		var cptNbChecked=1;
+
+		function RafraichirMenuGauche()
+		{
+			//[B8392] - J'ai ajouté un petit check et un try catch quand on va chercher le frame. Si jamais on ne le trouve pas on ne va pas faire l'appel de la fonction.
+			var doSelection = false;
+			try
+			{
+				doSelection = (window.top && window.top.frames[1] && window.top.frames[1].name == 'frGauche' && (typeof window.top.frames[1].SelectionneItem == 'function'));
+			}
+			catch (e)
+			{
+				doSelection = false;
+			}
+		
+			if (doSelection) {
+				
+				setTimeout(function () {
+					window.top.frames[1].updateSelf();
+					ReselectionnerItemApresRefresh(0);
+				}, 1000);
+			}
+		}
+			
+		function ReselectionnerItemApresRefresh(nbRefresh)
+		{
+			nbRefresh++;
+			if(nbRefresh < 50)
+			{
+			
+				try
+				{
+					window.top.frames[1].SelectionneItem(window.top.frames[2].frames[0].location);
+				}
+				catch (e)
+				{
+					nbRefresh++;
+					setTimeout('ReselectionnerItemApresRefresh('+nbRefresh+');', 200);
+				}
+			}
+		}
+
+		function gotoListeApresSuppression()
+		{
+			
+			window.top.frames[2].window.location = "/WebApplication/Module.MIOE/Commun/Message/MioListeDetailFrameset.aspx?C=JAC&E=P&L=ANG&Ref=20260224100453" + "&NomCategorie=" + ""+ "&View=Full"
+		}
+		
+		function NouveauMIO(lien)
+		{
+			window.top.frames[2].window.location = lien;
+		}
+		
+		function GenereLinkMessage()
+		{	
+			var listeContacts = "";
+			
+			for(i=0; i<window.top.frames[2].window.frames[0].document.forms[0].elements.length; i++)
+			{
+				objet = window.top.frames[2].window.frames[0].document.forms[0].elements[i];
+				if(objet && objet.type && objet.type == "checkbox" && objet.checked && objet.value != "CheckTous" && listeContacts.indexOf(objet.value) == -1)
+					listeContacts += objet.value + "¶";
+			}
+			if(listeContacts != "")
+			{
+				window.top.frames[2].window.frames[1].close();
+				window.top.frames[2].window.frames[0].location = "/WebApplication/Module.MIOE" + "/Commun/Composer/NouveauMessage.aspx?IdContact=" + listeContacts;
+				
+			}
+				
+			else
+				return;
+		}	
+		
+		function ValiderSupressionBox()
+		{
+			var texte;
+			var nbMessages = 0;
+			var listeMessages = "";
+			
+			for(i=0; i<window.top.frames[2].window.frames[0].document.forms[0].elements.length; i++)
+			{
+				objet = window.top.frames[2].window.frames[0].document.forms[0].elements[i];
+				if(objet && objet.type && objet.type == "checkbox" && objet.checked && objet.value != "CheckTous" && listeMessages.indexOf(objet.name) == -1)
+				{
+					listeMessages += objet.name + "¶";
+					nbMessages = nbMessages + 1;
+				}
+			}
+			
+			if(nbMessages == 0)
+				return;
+			else if(nbMessages == 1)
+				texte = "Do you really wish to delete this message?";
+			else if(nbMessages > 1)
+				texte = "Do you really wish to delete these messages?";
+			
+			if(confirm(texte))
+			{
+				window.location = "/WebApplication/Module.MIOE" + "/Commun/Message/SupprimerMessages.ashx?IdMessages=" + listeMessages;
+				
+				var sURL = unescape(window.top.frames[2].window.frames[0].window.location.href);
+				window.top.frames[2].window.frames[0].window.location.href = sURL;
+			}
+		}
+		
+		function AfficherPage()
+		{	//fix IE6 IE7
+			GE('spanAffichage').style.display = "block";
+		}
+
+		function SplitView() {
+			var StyleViewListe = "False";
+			
+			var sURL = "/WebApplication/Module.MIOE/Commun/Message/MioListeDetailFrameset.aspx?C=JAC&E=P&L=ANG&Ref=20260224100453";
+			
+			sURL = sURL + "&NomCategorie=" + "" + "&IdMessage=" + "caeb250f-eda0-4081-8727-85041893afef"
+			if(sURL.indexOf("StyleViewListe") > 0)
+			{
+				if(StyleViewListe == "True")
+				{
+				
+					window.top.frames[2].window.location.href = sURL.replace("FullView", "SplitView");
+				}
+				else
+				{
+
+					window.top.frames[2].window.location.href = sURL.replace("SplitView", "FullView");
+				}
+			}
+			else
+			{
+				if(StyleViewListe == "False")
+				{
+					window.top.frames[2].window.location.href = sURL + "&StyleViewListe=FullView";
+				}
+				else
+				{
+					window.top.frames[2].window.location.href = sURL+ "&StyleViewListe=SplitView";
+				}
+			}
+			
+		} //SplitView
+		
+		function mouseX(evt) {
+
+	        if (evt.pageX) { 
+		        currentXPos = evt.pageX;
+	        }
+	        else if (evt.clientX) {
+	           currentXPos = evt.clientX + (document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft);
+	         }
+	        else { 
+		        currentXPos = null;
+	        }
+		        if(isAfficheL) {
+			        document.getElementById("catLst").style.left = (currentXPos - 35) + "px";
+			        isAfficheL = false;
+		        } else if (isAfficheReply) {
+			        document.getElementById("replyAllDown").style.left = (currentXPos - 35) + "px";
+			        isAfficheReply = false;
+		        }
+        }//mouseX
+		
+        $(document).ready(function(){
+			$(window).resize(function(){
+				ValiderHauteur();
+			});
+
+            $('.lnkCategoriserMenu').on('click', function(e){
+                $('.lnkCategoriserMenu').click(BloquerLien); 
+            });
+	
+		});
+		
+		
+		
+		/*Méthode qui valide si la hauteur du frame FrListeBas est plus grand que 200 et si il est plus petit il le redimensionne*/
+		function ValiderHauteur()
+        {
+        	var isFullView = "False";
+            if(isFullView)
+			{
+                if(isFullView == "True")
+                    return;
+
+			    var theFrame = $('#FrListeBas', parent.document.body);	
+		
+			    if(theFrame.height() < 200){
+			
+				    var frameset = parent.document.getElementById("FrListe");
+				    frameset.rows = "*,200"; 		
+				
+			    }	
+           }		
+		}
+
+
+        function BloquerLien() { 
+          return false;
+        }
+
+
+		function AfficheMessageErreurRestaurerDetail() {
+			alert('Cannot restore the selected Mio because the size of the attached files exceeds the available space.');
+		}
+		
+	</script>
+	<style type="text/css">
+        .catLstWrapper,.catLstWrapperReply{display:block;width:204px;border:1px solid #92b6cd;border-top:0px;position:absolute;top:34px;font-size:11px;background-color:white;}
+        .catLstWrapperReply{width:auto;}
+        .catLstInnerBorder,.catLstInnerBorderReply{padding:3px;border:2px solid #cce8fa;border-top:0px;}
+        .catLst {width:100%;overflow:hidden;overflow-y:auto;padding-bottom:3px;}/*Overflow hidden pour éviter qu'une scrollbar horizontale apparaisse*/
+        .catLstInnerBorder a ,.catLstInnerBorderReply a{margin:0px;padding:4px;display:block;color:#4b5c67;text-decoration:none;font-size:11px;font-family:Roboto, Arial, 'Helvetica Neue', Helvetica, sans-serif;}
+        .catLstInnerBorderReply a{padding-left:20px;background-image:url('/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_Commun/images/mio_ReplyAll.svg');background-position:0 5px;background-repeat:no-repeat;}
+        .catLstInnerBorder a span {font-weight:normal;font-size:9px;color:#979797;padding-left:20px;}
+        .catLstInnerBorder a:hover,.catLstInnerBorderReply a:hover{background-color:#deeffd}
+		.catLstInnerBorder a img, .catLstInnerBorderReply a img {height:18px;}
+        img.catLine{width:100%;height:1px;line-height:0px;padding:0px;border:0px;}
+        div.catLine{width:100%;height:1px;margin:2px 0px 2px 0px;line-height:0px;padding:0px;border:0px;font-size:0px;}
+        #divAffichage{height:100%;}
+	</style>
+
+	<!--[if lt IE 9]>
+		<style type="text/css">
+			* html #container {
+				margin-top:30px;
+			  }
+			#aspnetForm
+			{
+				height:auto;
+			}
+			#divAffichage{height:auto;}
+		</style>
+	<![endif]-->
+
+
+	
+			<input id="hidScrollY" name="ctl00$hidScrollY" type="hidden" value="">
+		</form>
+	</div><div id="header">
+		<div class="preventClickOverlayHidden" id="ClickOverlayMenu"></div>
+		
+	<div id="fakeGrip" onmouseover="document.getElementById(&#39;fakeGrip&#39;).style.backgroundImage=&#39;url(\&#39;/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_equinox/images/Gen_FakeBorderOver.jpg\&#39;)&#39;;" style="background-image: url(&quot;/WebApplication/Module.MIOE/UI/Layout/Themes/Mio_equinox/images/Gen_FakeBorder.jpg&quot;);"><img src="./Gen_FakeGrip.jpg" alt=""></div>
+	
+	<div onmouseover="ToggleCatDropDown(true);" onmouseout="ToggleCatDropDown(false);" class="catLstWrapper" id="catLst" style="display:none;"><div class="catLstInnerBorder"><div class="catLst" style="height:21px;"><a href="javascript:document.forms[&#39;aspnetForm&#39;].ctl00$cntFormulaire$lnkCategoriser.value=&#39;&#39;;document.forms[&#39;aspnetForm&#39;].elements[&#39;ctl00$cntFormulaire$lnkCategoriser&#39;].value=&#39;&#39;;javascript:document.forms[&#39;aspnetForm&#39;].submit()" class="lnkCategoriserMenu" target="FrListeHaut" style="width:185px;">Uncategorized</a></div><img src="./MIO_GenLine_a.gif" class="catLine" alt=""><a href="https://johnabbott.omnivox.ca/WebApplication/Module.MIOE/Commun/MioAdministrerCategories.aspx?C=JAC&amp;E=P&amp;L=ANG&amp;Ref=20260224100453" target="frMilieu"><img src="./mio_Editer.svg" alt="">&nbsp;Manage categories<br><span>Modify or delete categories</span></a></div></div>
+	<script type="text/javascript">
+	AfficherFakeGrip();
+	function AfficherFakeGrip()
+		{
+			
+			if ("" == "Full")
+				document.getElementById('fakeGrip').style.display = "none";
+		}
+</script>
+
+	</div>
+	<script type="text/javascript">
+	// <![CDATA[
+		function ScrollTo()
+		{
+			document.getElementById('container').scrollTop = 0;
+		}
+		
+		
+		
+		function OnDivHautScroll()
+		{
+			GE('hidScrollY').value = GE('container').scrollTop;
+		}
+	// ]]>
+	</script>
+	<script>window.onload = new function(){AfficherPage();}</script>
+
+
+</body></html>

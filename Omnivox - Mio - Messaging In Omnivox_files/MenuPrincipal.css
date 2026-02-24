@@ -1,0 +1,87 @@
+/*-------------------------------------Thème Equinox */
+@import "../../Mio_Commun/MenuPrincipal.css";
+
+/*-------------------------------------Section Body */
+:root {
+	--svgcolor: white;
+}
+body {
+	background: #fff;
+	background-image: url('../images/MenuPrincipal_tile.png');
+	background-repeat: repeat-y;
+}
+
+#container {
+	bottom: 64px;
+}
+
+/* Section du menu principal gauche */
+#mnuPrWr {
+	width: 179px;
+	border: 1px solid #a1cdff;
+	border-left: 0;
+	background: transparent url('../images/MenuPrincipal_tilew.png') scroll repeat-y top left;
+	padding-top: 10px;
+}
+
+.LienComposerActive {
+	color: #ffcc19;
+}
+
+a {
+	color: #fff;
+}
+
+	a.iActive {
+		color: #ffcc19;
+	}
+
+	a.iNormal {
+		color: #fff;
+	}
+
+	a.noSelect {
+		color: #ffcc19;
+	}
+
+	a .nbMsgBlue {
+		color: yellow;
+	}
+
+/* Section Espace Utilisé */
+
+.MenuPrincipalBoxSpace {
+	width: 179px;
+	height: 29px;
+	border: 1px solid #a1cdff;
+	border-left: 0;
+	background-image: url('../images/MenuPrincipal_tilew.png');
+	background-repeat: repeat-y;
+}
+
+	.MenuPrincipalBoxSpace td {
+		color: #fff;
+	}
+
+.LienInfoMIO {
+	margin: 2px 0px 10px;
+}
+
+	.LienInfoMIO a {
+		color: #fff;
+	}
+
+.usageBG {
+	background-color: #192e39;
+	border-bottom: 1px dashed #6a96ae;
+}
+
+/*-------------------------------------Section Footer */
+
+#footer {
+	height: 56px;
+}
+
+* html #footer {
+	height: 45px;
+}
